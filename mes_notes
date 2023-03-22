@@ -1,0 +1,19 @@
+############################################
+	QUELQUES COMMANDES
+############################################
+
+	#Comment modifier le mot de passe root: 
+	sudo passwd root
+
+	#verifier la version de l'os
+	1) hostnamectl
+	2) cat /etc/redhat-release
+
+	#Une variable entre deux mots et dans une chaine de caractes dois etre entouree par des accolades
+	  Exemple: echo "mon clavier est ${a} et le tiens est $b"
+          la varible "a" est entre "est" et "et" d'ou les accolades. "b" etant en fin de phrase donc pas entoure , n'a pas besoin d'accolades.
+
+	#Pour affecter le resultat d'une commande a une varible, utiliser: faire comme dans l'exemple suivant:
+	
+	1) nom_machine=`hostname`
+	2) sur certaine machine on peur faire:   nom_machine=${hostname} 

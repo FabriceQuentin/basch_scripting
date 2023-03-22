@@ -1,0 +1,10 @@
+#!/bin/bash
+date
+cal
+pwd
+ls
+touch fichier_test
+echo "on apprend" > fichier_test
+ls
+cat fichier_test
+

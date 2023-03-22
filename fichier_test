@@ -1,0 +1,42 @@
+#!/bin/bash
+#####on apprend######
+a="azerty"
+b="qwerty"
+n=1
+NOM_MACHINE=`hostname`
+echo "ma machine se nomme ${NOM_MACHINE}"
+echo "mon clavier est $a et le tiens est $b"
+echo "$a et $b sont les ${n}ers claviers au monde"
+#for i in "a" "b" "c"
+#do
+#	echo "lettre $i ok"
+
+#done
+
+
+#read -p "comment tu t'appelles ?" NOM
+#echo "bonjour $NOM"
+
+min=1
+
+max=50
+
+nombre=$[($RANDOM % ($[$max - $min] + 1)) + $min]
+
+chiffre=0
+
+while [ $nombre -ne $chiffre ];
+do
+	read -p "J'ai choisis un chiffre entre 1 et 50. Devinez le chiffre correspondant" chiffre
+
+	if [ $nombre -gt $chiffre ];
+	then
+
+		echo "le nombre est supperieur a votre chiffre"
+	elif [ $nombre -lt $chiffre ];
+	then
+		echo "le nombre est inferieur a votre chiffre"
+	fi
+done
+
+echo "Trouve, le chiffre etait $nombre"
