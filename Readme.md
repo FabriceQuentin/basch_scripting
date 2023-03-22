@@ -1,1 +1,1 @@
-Here we just learn to to some script in bash scripting language
+Here we just learn to do some script in bash scripting language
